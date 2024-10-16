@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="search.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Optimize Search</title>
+  </head>
+  <body>
+    <main>
+      <div class="search-container">
+        <h1>Search</h1>
+        <div class="input-wrapper">
+          <input
+            id="searchInput"
+            name="search"
+            placeholder="Search for anything"
+            autocomplete="off"
+          />
+          <img id="clearAll" src="./search.svg" alt="Clear All" />
+        </div>
+      </div>
+      <div class="details-container">
+        <h2>Number of API Requests Made</h2>
+        <p>With no optimization: <span id="normalAPICount" class="text-primary">00</span></p>
+        <p>With debouncing: <span id="debounceAPICount" class="text-primary">00</span></p>
+        <p>With throttling: <span id="throttleAPICount" class="text-primary">00</span></p>
+
+        <h2 class="self-center">API Requests Made For</h2>
+        <div class="row-container">
+          <div class="col-container">
+            <p class="self-center heading"><strong>With No Optimization</strong></p>
+            <div id="normalAPICalls"></div>
+          </div>
+          <div class="col-container">
+            <p class="self-center heading"><strong>With Debouncing</strong></p>
+            <div id="debounceAPICalls"></div>
+          </div>
+          <div class="col-container">
+            <p class="self-center heading"><strong>With Throttling</strong></p>
+            <div id="throttleAPICalls"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
