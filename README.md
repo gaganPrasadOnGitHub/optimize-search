@@ -11,3 +11,7 @@ This project demonstrates the differences in API call handling between three met
 - Clone the repository.
 - Open `index.html` in your browser.
 - Start typing in the search input to see how many API calls are made under each method.
+
+## License
+
+This project is open source and free to use.
